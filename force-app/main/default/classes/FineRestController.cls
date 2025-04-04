@@ -27,7 +27,7 @@ public without sharing class FineRestController {
                 FROM Fine__c
                 WHERE Loan__c IN :loans
             ];
-
+    
         } catch (Exception e) {
             System.debug('=== ERROR: ' + e.getMessage());
             throw new AuraHandledException('An error occurred while fetching fines');

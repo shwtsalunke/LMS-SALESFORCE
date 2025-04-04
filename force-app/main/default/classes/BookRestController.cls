@@ -4,6 +4,7 @@ public without sharing class BookRestController {
     public static List<Book__c> getBooks() {
       
         // Comment added for testing CI/CD pipeline
+        // comment added for second testing CI/CD pipeline
 
         try {
             List<Book__c> booksList = [SELECT Id, Name, Genre__c, Availability_Status__c FROM Book__c];
