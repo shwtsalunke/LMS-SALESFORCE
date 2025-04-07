@@ -7,6 +7,7 @@ public without sharing class BookRestController {
         // comment added for second testing CI/CD pipeline
         // comment added for third testing CI/CD pipeline
         // comment added for 4rth testing CI/CD pipeline
+        // commnet added for 5th testing CI/CD pipeline
         try {
             List<Book__c> booksList = [SELECT Id, Name, Genre__c, Availability_Status__c FROM Book__c];
             return booksList.isEmpty() ? new List<Book__c>() : booksList;
