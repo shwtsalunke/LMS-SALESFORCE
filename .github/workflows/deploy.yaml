@@ -39,7 +39,7 @@ jobs:
             echo "DEPLOY_TYPE=sandbox" >> $GITHUB_ENV
           elif [[ "${{ github.ref }}" == "refs/heads/production" ]]; then
             echo "DEPLOY_CONSUMER_KEY=${{ secrets.PRODUCTION_CONSUMER_KEY }}" >> $GITHUB_ENV
-            echo "DEPLOY_USERNAME=${{ secrets.PRODUCTION_DEPLOYMENT_USER_NAME }}" >> $GITHUB_ENV
+            echo "DEPLOY_USERNAME=${{ secrets.PRODUCTION_USERNAME }}" >> $GITHUB_ENV
             echo "DEPLOY_TYPE=production" >> $GITHUB_ENV
           fi
 
