@@ -3,10 +3,10 @@ private class BookRestControllerTest {
 
     @isTest
     static void testGetBooks() {
-        // Step 1: Create test data
+        // Step 1: Create test data with all required fields
         List<Book__c> testBooks = new List<Book__c>{
-            new Book__c(Name = 'Book A', Genre__c = 'Fiction', Availability_Status__c = 'Available'),
-            new Book__c(Name = 'Book B', Genre__c = 'Non-fiction', Availability_Status__c = 'Checked Out')
+            new Book__c(Name = 'Book A', Genre__c = 'Fiction', Availability_Status__c = 'Available', Author__c = 'Author A', ISBN__c = 'ISBN001'),
+            new Book__c(Name = 'Book B', Genre__c = 'Non-fiction', Availability_Status__c = 'Checked Out', Author__c = 'Author B', ISBN__c = 'ISBN002')
         };
         insert testBooks;
 

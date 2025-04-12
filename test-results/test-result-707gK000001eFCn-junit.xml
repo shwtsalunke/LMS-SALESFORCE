@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2025-04-12T14:26:49.000Z" hostname="https://orgfarm-f92c5d2524-dev-ed.develop.my.salesforce.com" tests="2" failures="1"  errors="0"  time="0.07">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="2"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="1"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="50%"/>
+            <property name="failRate" value="50%"/>
+            <property name="testStartTime" value="Sat Apr 12 2025 10:26:49 AM"/>
+            <property name="testSetupTimeInMs" value="0"/>
+            <property name="testExecutionTime" value="0.07 s"/>
+            <property name="testTotalTime" value="0.07 s"/>
+            <property name="commandTime" value="0.12 s"/>
+            <property name="hostname" value="https://orgfarm-f92c5d2524-dev-ed.develop.my.salesforce.com"/>
+            <property name="orgId" value="00DgK00000184fYUAQ"/>
+            <property name="username" value="swetasalunke057290@agentforce.com"/>
+            <property name="testRunId" value="707gK000001eFCn"/>
+            <property name="userId" value="005gK000000s8AHQAY"/>
+        </properties>
+        <testcase name="testGetBooks" classname="BookRestControllerTest" time="0.05">
+            <failure message="System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Author__c, ISBN__c]: [Author__c, ISBN__c]"><![CDATA[Class.BookRestControllerTest.testGetBooks: line 11, column 1]]></failure>
+        </testcase>
+        <testcase name="testGetBooksEmpty" classname="BookRestControllerTest" time="0.02">
+        </testcase>
+    </testsuite>
+</testsuites>
